@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>CardInput</title>
+	</head>
+<body>
+
+<div style="text-align: center;">
+	<form action="/users/regist" method="post">
+		<!-- {% csrf_token %} -->
+		<h3>Check In</h3>
+		<div>
+			<input style="border-radius: 10px; padding: 0.2rem 20px" name="card_num" type="text">
+			<br><br>
+		</div>
+		<!-- <div>
+			<input style="border-radius: 10px; padding: 0.2rem 20px" name="pwd" type="password">
+			<br><br>
+		</div> -->
+		<div>
+			<input style="padding: 7px 65px;
+			background-color: cornflowerblue;
+			border-radius: 10px;" type="submit" value="체크인 하기">
+		</div>
+	</form>
+	<!-- <form action="{% url 'auth:signup'%}" method="GET">
+		{% csrf_token %}
+		<div>
+			<input style="padding: 7px 74px; background-color: cornflowerblue;
+			border-radius: 10px; margin-top: 0.5rem;" type="submit" value="회원가입">
+		</div>
+	</form> -->
+</div>
+
+</body>
+
+</html>

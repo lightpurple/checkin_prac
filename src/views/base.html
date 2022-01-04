@@ -5,53 +5,39 @@
 		<title>42CheckIn</title>
 	</head>
 <body style="text-align: center;">
-	<br><br><br><br>
+	<br><br><br>
 
 	<h2>42CheckIn</h2>
-	<div style="padding: 7px 33%; width: 50%; height: 100px; text-align: center;">
-		<div style="float:left;">
+	<div style="padding: 7px 38.5%; height: 100px;">
+		<div style="float:left; border: solid black; border-radius: 10px; padding: 1rem 2rem;">
 			<div style="font-size:2rem;">
 				개포
 			</div>
 			<div>
-				<%= gaepo_count %>
+				<%= gaepo_count %>명
+
+			<%= user %>
 			</div>
 		</div>
-		<div>
+		<div style="float:right; border: solid black; border-radius: 10px; padding: 1rem 2rem;">
 			<div style="font-size:2rem;">
 				서초
 			</div>
 			<div>
-				<%= seocho_count %>
+				<%= seocho_count %>명
 			</div>
 		</div>
 	</div>
 
 <div>
 	<form action="/users/login" method="get">
-		<!-- {% csrf_token %} -->
 		<h3>Login</h3>
-		<!-- <div>
-			<input style="border-radius: 10px; padding: 0.2rem 20px" name="username" type="text">
-			<br><br>
-		</div>
-		<div>
-			<input style="border-radius: 10px; padding: 0.2rem 20px" name="pwd" type="password">
-			<br><br>
-		</div> -->
 		<div>
 			<input style="padding: 7px 65px;
 			background-color: cornflowerblue;
 			border-radius: 10px;" type="submit" value="로그인 하기">
 		</div>
 	</form>
-	<!-- <form action="{% url 'auth:signup'%}" method="GET">
-		{% csrf_token %}
-		<div>
-			<input style="padding: 7px 74px; background-color: cornflowerblue;
-			border-radius: 10px; margin-top: 0.5rem;" type="submit" value="회원가입">
-		</div>
-	</form> -->
 </div>
 
 </body>

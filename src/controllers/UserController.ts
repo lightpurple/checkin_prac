@@ -1,8 +1,9 @@
 import { NextFunction, Request, Response } from "express";
+import { now } from "sequelize/types/lib/utils";
 import { db } from "../models/index";
 
 export default {
-    loginPage: async (req: Request, res: Response, next: NextFunction) => {
+    loginPage: async (req: any, res: Response, next: NextFunction) => {
         var query_gaepo =
             "select count(*) from Users inner join Cards on Users.card_num = Cards.card_num where gaepo=true";
         var query_seocho =
@@ -26,42 +27,51 @@ export default {
         res.json(users);
     },
     registCard: async (req: any, res: Response, next: NextFunction) => {
+        if (req.body.card_num < 1 || isNaN(req.body.card_num)) {
+            // 카드번호가 1보다 작을 때
+            res.send(
+                "<script>alert('잘못된 카드번호입니다.');location.href='http://localhost:3000/users/regist';</script>"
+            );
+        }
+        const exist_card = await db.User.findOne({
+            where: { card_num: req.body.card_num },
+        });
+        if (exist_card) {
+            // 카드가 이미 존재할 경우
+            res.send(
+                "<script>alert('이미 사용중인 카드입니다.');location.href='http://localhost:3000/users/regist';</script>"
+            );
+        }
         await db.User.update(
+            // User모델 card_num 업데이트
             { card_num: req.body.card_num, is_using: true },
             { where: { intra_id: req.decoded.username } }
         );
-        console.log("1");
         if (req.body.card_num < 1000) {
             // 카드번호가 1000 이하면 개포
-            console.log("1");
-
             await db.Card.create({
-                // 여기서 에러발생!
                 card_num: req.body.card_num,
                 gaepo: true,
-                seocho: false,
             });
-            console.log("1");
         } else {
-            console.log("2");
-
             // 카드번호가 1000이상이면 서초
             await db.Card.create({
                 card_num: req.body.card_num,
-                gaepo: false,
                 seocho: true,
             });
-            console.log("2");
         }
         res.send(
-            "<script>alert('체크인 성공!🤪');location.href='http://localhost:3000/users/show';</script>"
+            "<script>alert('체크인 성공!🤪');location.href='http://localhost:3000/users';</script>"
         );
     },
     logOut: async (req: any, res: Response, next: NextFunction) => {
-        const user = await db.Users.findOne({
+        const user = await db.User.findOne({
             where: { intra_id: req.decoded.username },
         });
-        await db.Card.destroy({ where: { card_num: user[0][0].card_num } });
+        console.log(user.dataValues.card_num);
+        await db.Card.destroy({
+            where: { card_num: user.dataValues.card_num },
+        });
         await db.User.update(
             { card_num: "0", is_using: false },
             { where: { intra_id: req.decoded.username } }

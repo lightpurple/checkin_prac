@@ -1,0 +1,164 @@
+2022-01-03 00:45:21 <info> fe1dceb0-6be2-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'POST',
+    path: '/users/regist',
+    cookie: undefined,
+    body: [Object: null prototype] { card_num: 'sadf' },
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:27 <info> 02145d40-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users',
+    cookie: undefined,
+    body: {},
+    url: '/users',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:29 <info> 0303c650-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users/login',
+    cookie: undefined,
+    body: {},
+    url: '/users/login?',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:30 <info> 03a361b0-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users/login/callback',
+    cookie: undefined,
+    body: {},
+    url: '/users/login/callback?code=ce8dde861c055aa1a50a4b98a9ebe2db8885c08684a5edab1feddbd94b73b91a',
+    query: {
+      code: 'ce8dde861c055aa1a50a4b98a9ebe2db8885c08684a5edab1feddbd94b73b91a'
+    }
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:34 <info> 05db2940-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:39 <info> 091608f0-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'POST',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: [Object: null prototype] { card_num: 'sdf' },
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:40 <info> 09bfdd80-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:43 <info> 0b7a10a0-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'POST',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: [Object: null prototype] { card_num: '0432' },
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:45:46 <info> 0d20bbc0-6be3-11ec-94a9-61b3a09f7506 {
+  request: {
+    method: 'GET',
+    path: '/users',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:39 <info> 50b76ff0-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:41 <info> 5194d7a0-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:49 <info> 56548290-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users/login',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users/login?',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:51 <info> 57afa5c0-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users/login/callback',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODMzNCwiZXhwIjoxNjQxNzQzMTM0fQ.8Zx6LAAPcpf-lD0Xd3fSCbUc56iYY__dflrWr-RquxM',
+    body: {},
+    url: '/users/login/callback?code=ef964cad8e67fa7a5c32202b9e77576df7d47b4cbc9a456f50bc13750b822b76',
+    query: {
+      code: 'ef964cad8e67fa7a5c32202b9e77576df7d47b4cbc9a456f50bc13750b822b76'
+    }
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:54 <info> 59994d50-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODQ3NCwiZXhwIjoxNjQxNzQzMjc0fQ.oBiLCtnuwsJZlPg07Ft1Oj1vzk10f-KXAXPxzLEfmuo',
+    body: {},
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:56 <info> 5ac486e0-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'POST',
+    path: '/users/regist',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODQ3NCwiZXhwIjoxNjQxNzQzMjc0fQ.oBiLCtnuwsJZlPg07Ft1Oj1vzk10f-KXAXPxzLEfmuo',
+    body: [Object: null prototype] { card_num: '131' },
+    url: '/users/regist',
+    query: {}
+  }
+} (in logger.ts:18)
+2022-01-03 00:47:58 <info> 5bbc2d50-6be3-11ec-a574-637a3f7d3713 {
+  request: {
+    method: 'GET',
+    path: '/users',
+    cookie: 'user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImV1aG9uZyIsImlhdCI6MTY0MTEzODQ3NCwiZXhwIjoxNjQxNzQzMjc0fQ.oBiLCtnuwsJZlPg07Ft1Oj1vzk10f-KXAXPxzLEfmuo',
+    body: {},
+    url: '/users',
+    query: {}
+  }
+} (in logger.ts:18)
